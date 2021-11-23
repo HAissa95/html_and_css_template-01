@@ -156,7 +156,13 @@ body {
     background-size: cover;
     height: calc(100vh - 200px);
     position: relative;
-    
+}
+@media (max-width: 304px) {
+    .landing {
+        background-image: none;
+        height: 100px;
+        margin-top: 60px;
+    }
 }
 .landing .intro {
     position: absolute;
@@ -175,12 +181,24 @@ body {
 }
 @media (max-width: 767px) {
     .landing .intro h1 {
-    font-size: 7vh;
+    font-size: 6vh;
     }
 }
 @media (max-width: 560px) {
     .landing .intro h1 {
         font-size: 5vh;
+    }
+}
+@media (max-width: 394px) {
+    .landing .intro h1 {
+        font-size: 4vh;
+    }
+}
+@media (max-width: 304px) {
+    .landing .intro h1 {
+        color: var(--secondery-color);
+        font-size: 25px;
+        text-align: center;
     }
 }
 .landing .intro p {
@@ -189,6 +207,13 @@ body {
     font-weight: 400;
     color: #57f369d8;
     margin: 1px;
+}
+@media (max-width: 304px) {
+    .landing .intro p {
+        color: var(--secondery-color);
+        font-size: 15px;
+        text-align: center;
+    }
 }
 /*@media (max-width: 625px) {
     .landing .intro h1 {
@@ -361,7 +386,7 @@ body {
 }
 @media (max-width: 991px) {
     .about .about-content .image {
-        margin: 0 auto 60px;
+        margin: 0 auto;
     }
 }
 @media (max-width: 767px) {
@@ -369,6 +394,11 @@ body {
         width: 100%;
     }
 }
+/*@media (max-width: 599px) {
+    .about .about-content .image {
+    height: 320px;
+    }
+}*/
 .about .about-content .image::before {
     content: "";
     position: absolute;
