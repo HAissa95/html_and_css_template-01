@@ -178,6 +178,11 @@ body {
     font-size: 7vh;
     }
 }
+@media (max-width: 560px) {
+    .landing .intro h1 {
+        font-size: 5vh;
+    }
+}
 .landing .intro p {
     font-size: 19px;
     line-height: 1.8;
@@ -357,6 +362,11 @@ body {
 @media (max-width: 991px) {
     .about .about-content .image {
         margin: 0 auto 60px;
+    }
+}
+@media (max-width: 767px) {
+    .about .about-content .image {
+        width: 100%;
     }
 }
 .about .about-content .image::before {
